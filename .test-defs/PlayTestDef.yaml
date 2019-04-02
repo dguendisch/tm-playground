@@ -1,0 +1,15 @@
+kind: TestDefinition
+metadata:
+  name: play
+spec:
+  owner: owner@example.com
+  # recipientsOnFailure:
+  # - dl@example.com
+  ttlSecondsAfterFinished: 300
+
+  description: Play with TestMachinery
+
+  labels: ["default"]
+
+  command: [bash, -c]
+  args: ["echo local testing ; sleep 10; echo DONE"]

@@ -1,0 +1,13 @@
+apiVersion: testmachinery.sapcloud.io/v1beta1
+kind: Testrun
+metadata:
+  generateName: play-
+  namespace: default
+spec:
+  testLocations:
+  - type: git
+    repo: https://github.com/dguendisch/tm-playground.git
+    revision: master
+
+  testFlow:
+  - - name: play
