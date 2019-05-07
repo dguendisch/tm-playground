@@ -13,3 +13,5 @@ spec:
 
   command: [bash, -c]
   args: ["echo local testing ; sleep 10; echo DONE"]
+
+  image: eu.gcr.io/gardener-project/gardener/testmachinery/golang:0.42.0
