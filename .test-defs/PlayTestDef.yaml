@@ -12,6 +12,9 @@ spec:
   labels: ["default"]
 
   command: [bash, -c]
-  args: ["echo local testing ; sleep 10; echo DONE"]
-
+  args:
+    - >-
+      echo "bla" &&
+      /tm/setup github.com/gardener gardener &&
+      echo "hallo"
   image: eu.gcr.io/gardener-project/gardener/testmachinery/golang:0.42.0
