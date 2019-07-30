@@ -10,4 +10,6 @@ spec:
     revision: master
 
   testFlow:
-  - - name: play
+  - name: play
+    definition:
+      name: play
